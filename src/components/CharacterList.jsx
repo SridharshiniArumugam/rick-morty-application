@@ -7,7 +7,7 @@
 
 import React, { useEffect, useState } from "react";
 import Character from "./Character";
-import { fetchCharacters } from "../services/api";
+import { fetchCharacters } from "../services/Api.js";
 import "./CharacterList.scss";
 
 const CharacterList = () => {
