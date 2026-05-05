@@ -1,0 +1,77 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  input,
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  h4 {
+    margin: 10px 0 5px;
+  }
+
+  p {
+    font-size: 14px;
+    color: gray;
+  }
+}
+
+.pagination {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+
+  button {
+    padding: 6px 12px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.no-data {
+  color: gray;
+  margin-top: 20px;
+}
